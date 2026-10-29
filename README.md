@@ -8,6 +8,9 @@ A hands-on curriculum for **software engineering principles, object-oriented des
 
 Every topic has a concept guide covering what it is, why it matters, when to use it, intuition, trade-offs, common mistakes and interview questions. Code topics show a **BAD** version next to a **GOOD** one, and tests prove the behaviour.
 
+## Website
+📖 Read the guides online at **https://junaaid96.github.io/software_principle/**, with search, dark mode, rendered diagrams and the Java sources inline. The site is built from this repo's Markdown (see [`website/`](website)).
+
 ## Quick start
 ```bash
 git clone https://github.com/junaaid96/software_principle.git
@@ -58,6 +61,8 @@ software_principle/
 ├── docs/diagrams/                     # Mermaid diagrams (OOAD case study, learning map)
 ├── docs/adr/                          # Architecture Decision Records + template
 ├── .github/workflows/ci.yml           # build + test on every push / PR
+├── .github/workflows/pages.yml        # builds and deploys the docs website
+├── website/                           # VitePress docs site (generated from the Markdown)
 ├── CONTRIBUTING.md
 └── LICENSE (MIT)
 ```
