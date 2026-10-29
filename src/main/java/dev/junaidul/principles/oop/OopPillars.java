@@ -67,7 +67,7 @@ public final class OopPillars {
         acc.deposit(new BigDecimal("100"));
         acc.withdraw(new BigDecimal("30"));
         System.out.println(acc.balance() + " " + acc.history());
-        checkout(List.of(new VisaCard("4242"), new MobileWallet("bKash")), new BigDecimal("9.99"))
+        checkout(List.of(new VisaCard("4242"), new MobileWallet("PayPal")), new BigDecimal("9.99"))
                 .forEach(System.out::println);
     }
 }

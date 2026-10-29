@@ -16,8 +16,8 @@ class OopPillarsTest {
     }
     @Test void polymorphismDispatchesPerType() {
         var out = OopPillars.checkout(List.of(new OopPillars.VisaCard("1111"),
-                new OopPillars.MobileWallet("Nagad")), BigDecimal.ONE);
+                new OopPillars.MobileWallet("Stripe")), BigDecimal.ONE);
         assertEquals("VISA ****1111 charged 1", out.get(0));
-        assertEquals("Nagad wallet paid 1", out.get(1));
+        assertEquals("Stripe wallet paid 1", out.get(1));
     }
 }
